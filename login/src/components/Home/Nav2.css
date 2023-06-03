@@ -22,12 +22,12 @@
 html{
     font-size: 62.2%;
     overflow-x: hidden;
-    scroll-padding-top: 9rem;
+    scroll-padding-top: 9px;
     scroll-behavior: smooth;
 }
 
 html::webkit-scrollbar{
-    width: .8rem;
+    width: .8px;
 }
 
 html::webkit-scrollbar-track{
@@ -36,7 +36,7 @@ html::webkit-scrollbar-track{
 
 html::webkit-scrollbar-thumb{
     background:rgb(255, 252, 252);
-    border-radius: 5rem;
+    border-radius: 16px;
 }
 
 body{
@@ -81,7 +81,9 @@ body{
     border-bottom: 1rem solid var(--maincolor);
     padding-bottom: 4rem;
 }
-
+.icons {
+    display: flex;
+}
 .header .icons div{
     color: rgb(255, 255, 255);
     cursor: pointer;
@@ -101,7 +103,12 @@ body{
 .header .search-form{
     position:absolute;
     top: 115%; right: 7%;
-    background: white;
+    background: rgb(255, 255, 255);
+    /* background: linear-gradient(
+    103.49deg,
+    #ffffff -28.13%,
+    rgba(80, 116, 65) 90.84%
+  ); */
     width: 50rem;
     height: 5rem;
     display: flex;
@@ -260,3 +267,4 @@ font-weight:700;
   font-weight:700;
   /* position: absolute; */
 }
+

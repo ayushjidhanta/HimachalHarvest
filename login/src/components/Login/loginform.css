@@ -90,10 +90,10 @@
 
 input{
 border : none;
-background-color: rgb(229, 226,226);
+background-color: rgb(225, 221, 221);
 height: 4em;
 width: 80%;
-border-radius: 0.25em;
+/* border-radius: 0.25em; */
 text-align: center;
 padding: 2em;
 }

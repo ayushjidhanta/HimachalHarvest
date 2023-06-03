@@ -1,6 +1,13 @@
 import React from "react";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/actions/cartAction";
 
 const Products = ({ product }) => {
+  const dispatch =  useDispatch();
+  const addToCartFun = (id) => {
+    console.log(id);
+    dispatch(addToCart(id, 1));
+  }
   return (
     <div className="col-md-6 col-lg-4 col-xl-3 col-12 p-4">
       <div
@@ -30,9 +37,9 @@ const Products = ({ product }) => {
             fontSize: "10pt",
             fontWeight: "bold",
             letterSpacing: "1px",
-            backgroundColor: "#13a5b6",
+            backgroundColor: "green",
           }}
-        >
+          onClick={() => addToCartFun(product.id)}>
           Add to Cart
         </button>
       </div>

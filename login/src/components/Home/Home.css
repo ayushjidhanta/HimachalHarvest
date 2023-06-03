@@ -22,16 +22,16 @@ position: relative;
   .section__1 .wrapper .head__text {
     color: #fffdfd;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 16px;
   }
   .section__1 .wrapper .head__text .head__title {
-    font-size: 4rem;
+    font-size: 54px;
     letter-spacing: 2px;
     font-family: monospace;
     text-transform: uppercase;
   }
   .section__1 .wrapper .head__text .head__desc {
-    font-size: 2rem;
+    font-size: 20px;
     letter-spacing: 2px;
     font-family: monospace;
   }

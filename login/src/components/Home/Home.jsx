@@ -1,8 +1,8 @@
 import React from 'react';
-import Navbar2 from './Navbar2.jsx';
 import Slider from './Slider.jsx';
 import  "./Home.css";
 import { useNavigate } from 'react-router';
+import Navbar2 from './Navbar2.jsx';
 
 function Home() {
 
@@ -12,7 +12,6 @@ function Home() {
     navigate("/explore");
   }
 
- 
   return (
     <div>
       <Navbar2/>

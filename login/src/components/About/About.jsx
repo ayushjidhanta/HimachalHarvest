@@ -15,7 +15,7 @@ export default function About() {
 
       <div className="pageAbout">
         <div className="inside">
-          <h1 Style=" color:white; font-family:monospace; font-size: 3em ;"><strong>About Us</strong></h1>
+          <h1 Style=" color:black; font-family:monospace; font-size: 3em ;"><strong>About Us</strong></h1>
 
           {/* <img src="/SliderExp-image/Slider-image5.jpg" className="img-fluid" alt="..."></img> */}
           <div className="card bg-dark text-white">

@@ -14,22 +14,22 @@ function SliderExp() {
   <div className="carousel-item active" data-bs-interval="10000">
     <img src="/SliderExp-image/SliderExp-img1.jpeg" className="d-block w-10" alt="First "/>
     <div className="carousel-caption ">
-      <h5>First slide label</h5>
-      <p>Some representative placeholder content for the first slide.</p>
+      <h4>Choose the Products here </h4>
+      <h5>Some representative placeholder content for the first slide.</h5>
     </div>
   </div>
   <div className="carousel-item" data-bs-interval="2000">
     <img src="/SliderExp-image/SliderExp-img2.jpeg" className="d-block w-10" alt="Second "/>
     <div className="carousel-caption ">
-      <h5>Second slide label</h5>
-      <p>Some representative placeholder content for the second slide.</p>
+      <h4>Second slide label</h4>
+      <h5>Some representative placeholder content for the second slide.</h5>
     </div>
   </div>
   <div className="carousel-item">
     <img src="/SliderExp-image/SliderExp-img3.jpeg" className="d-block w-10" alt="Third"/>
     <div className="carousel-caption ">
-      <h5>Third slide label</h5>
-      <p>Some representative placeholder content for the third slide.</p>
+      <h4>Third slide label</h4>
+      <h5>Some representative placeholder content for the third slide.</h5>
     </div>
   </div>
 </div>

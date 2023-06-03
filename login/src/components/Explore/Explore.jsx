@@ -5,14 +5,14 @@ import SliderExp from "../Sliders/SliderExp";
 import Products from "./Products";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
-import { getProducts } from "../../redux/actions/action";
+import { getProducts } from "../../redux/actions/productAction";
 
 export default function Exploree() {
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getProducts());
-  });
+  }, []);
   const { products } = useSelector((state) => state.getProducts);
 
   return (

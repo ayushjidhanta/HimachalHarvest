@@ -3,8 +3,10 @@ import { useNavigate } from "react-router";
 // import img1 from "./images/apple1.jpg";
 import "./Nav2.css";
 import { Link } from "react-router-dom";
-export default function Navbar2() {
+import { useSelector } from "react-redux";
 
+export default function Navbar2() {
+  const { cartItems } = useSelector((state) => state.cart);
   const navigate = useNavigate();
   
   const togglePg=()=>{
@@ -32,11 +34,9 @@ export default function Navbar2() {
       <nav className="navbar" ref={navbarRef}>
         <Link to="/home" >Home</Link>
         <Link to="/about" >About</Link>
-        <a href="#menu">Menu </a>
-        <a href="#Products">Products </a>
-        <a href="#review">Review </a>
-        <a href="#contact">Contact </a>
-        <a href="#blogs">Blogs </a>
+        <Link to="/privacy">Privacy </Link>
+        <Link to="/Explore">Products </Link>
+        <Link to="/review">Review </Link>
       </nav>
 
       <div className="icons" >
@@ -58,17 +58,18 @@ export default function Navbar2() {
       <div className="cart-items-container" ref={cartItemRef}>
       
         <div className="cart-item">
-          <img src="/public-images/HH.jpg" className="img-fluid" alt="..."></img>
+          <img src="/public-images/HH.jpg" className="img-fluid" alt="..." ></img>
           <span className="fas fa-time"></span>
           <div className="content ">
-            <h3>Cart Items</h3>
+            {/* <h3>Total Items</h3> */}
             <div className="price">
-              Price</div>
+              {/* Price */}
+              </div>
           </div>
         </div>
 
         <div className="bag-quantity">
-          <span>3</span>
+          <span>{cartItems.length}</span>
         </div>
         <button className="Checkout" onClick={togglePg}>Go to My Cart </button>
       </div>
